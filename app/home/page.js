@@ -55,7 +55,7 @@ export default function Slide() {
           A SMART WAY TO CONNECT
         </h1>
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text mb-5">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text mb-5">
           Smart business cards That Speak for You.
         </h1>
 

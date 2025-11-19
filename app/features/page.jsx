@@ -51,9 +51,9 @@ const Secpage = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center gap-6 px-6 bg-gradient-to-r from-black via-slate-500 to-white py-10 md:py-20">
+    <div className=" min-h-screen w-full flex flex-col items-center gap-6 px-6 bg-gradient-to-r from-black via-slate-500 to-white py-10 md:py-20">
       {/* Section Title */}
-      <h1 className="text-5xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text text-center">
+      <h1 className="mt-10 text-5xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text text-center">
         Why Choose MYAICARD
       </h1>
 

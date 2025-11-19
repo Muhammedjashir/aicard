@@ -1,4 +1,4 @@
-"use client"; // ✅ Required for client-side rendering
+"use client"; 
 
 import React from "react";
 import Image from "next/image";
@@ -96,13 +96,7 @@ const Pricepage = () => {
             key={index}
             className="cursor-pointer relative rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105 overflow-hidden"
           >
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-110 sm:h-full md:h-120 object-cover"
-            >
+            <video autoPlay loop muted playsInline className="w-full h-110 sm:h-full md:h-120 object-cover">
               <source src={feature.vdo} type="video/mp4" />
             </video>
 
@@ -112,49 +106,36 @@ const Pricepage = () => {
               <h2 className="text-2xl font-bold mb-2">{feature.title}</h2>
               <p className="text-sm sm:text-base mb-2">{feature.description}</p>
               {feature.price && (
-                <p className="text-orange-400 font-semibold text-lg">
-                  {feature.price}
-                </p>
+                <p className="text-orange-400 font-semibold text-lg">{feature.price}</p>
               )}
             </div>
           </div>
         ))}
       </div>
 
-      {/* Plan Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-5xl  h-120 ">
+      {/* Plan Cards — UPDATED SPACING (mb-24) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-5xl ">
         {plans.map((feature, index) => (
           <div
             key={index}
-            className="cursor-pointer relative rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105 "
+            className="cursor-pointer relative rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105"
           >
-            <div className="relative w-full h-[400px]">
-              <Image
-                src={feature.background}
-                alt={feature.title}
-                fill
-                className="object-contain  "
-              />
+            <div className="w-full h-[450px] relative">
+              <Image src={feature.background} alt={feature.title} fill className="object-contain" />
             </div>
 
             <div className="rounded-xl absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10"></div>
 
             <div className="absolute top-0 left-0 right-0 p-6 text-white">
-              <h2 className="text-4xl font-bold mb-2 text-center">
-                {feature.title}
-              </h2>
+              <h2 className="text-4xl font-bold mb-2 text-center">{feature.title}</h2>
               {feature.price && (
-                <p className="text-orange-400 font-semibold text-2xl text-center">
-                  {feature.price}
-                </p>
+                <p className="text-orange-400 font-semibold text-2xl text-center">{feature.price}</p>
               )}
-              <p className="text-sm sm:text-base mb-2 text-center">
-                {feature.sub}
-              </p>
-              <div>
-                <h3 className="text-lg font-semibold mb-1">Features:</h3>
-              </div>
-              <ul className="list-disc pl-4 space-y-1 text-white h-24 ">
+              <p className="text-sm sm:text-base mb-2 text-center">{feature.sub}</p>
+
+              <h3 className="text-lg font-semibold mb-1">Features:</h3>
+
+              <ul className="list-disc pl-4 space-y-1 text-white h-24">
                 {feature.feature.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
@@ -175,23 +156,15 @@ const Pricepage = () => {
             <thead>
               <tr className="border-b border-gray-400 text-gray-200">
                 <th className="text-left py-3 px-4 font-semibold">Features</th>
-                <th className="text-center py-3 px-4 font-semibold">
-                  Digital Starter
-                </th>
-                <th className="text-center py-3 px-4 font-semibold text-orange-400">
-                  Business Pro
-                </th>
+                <th className="text-center py-3 px-4 font-semibold">Digital Starter</th>
+                <th className="text-center py-3 px-4 font-semibold text-orange-400">Business Pro</th>
               </tr>
             </thead>
+
             <tbody className="text-gray-100">
               {fea.feature.map((item, index) => (
-                <tr
-                  key={index}
-                  className="border-b border-gray-600 hover:bg-white/10 transition"
-                >
-                  <td className="py-3 px-4 font-medium whitespace-nowrap">
-                    {item.name}
-                  </td>
+                <tr key={index} className="border-b border-gray-600 hover:bg-white/10 transition">
+                  <td className="py-3 px-4 font-medium whitespace-nowrap">{item.name}</td>
 
                   <td className="text-center py-3 px-4">
                     {typeof item.starter === "boolean" ? (
@@ -201,9 +174,7 @@ const Pricepage = () => {
                         <span className="text-gray-500">—</span>
                       )
                     ) : (
-                      <span className="text-green-300 font-semibold">
-                        {item.starter}
-                      </span>
+                      <span className="text-green-300 font-semibold">{item.starter}</span>
                     )}
                   </td>
 
@@ -215,9 +186,7 @@ const Pricepage = () => {
                         <span className="text-gray-500">—</span>
                       )
                     ) : (
-                      <span className="text-orange-400 font-semibold">
-                        {item.pro}
-                      </span>
+                      <span className="text-orange-400 font-semibold">{item.pro}</span>
                     )}
                   </td>
                 </tr>
