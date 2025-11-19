@@ -44,7 +44,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8">
-          <Link href="/docs" className="text-xl font-bold hover:text-orange-400 transition-all">
+          <Link href="" className="text-xl font-bold hover:text-orange-400 transition-all">
             Docs
           </Link>
           <Link href="/features" className="text-xl font-bold hover:text-orange-400 transition-all">
