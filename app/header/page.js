@@ -100,7 +100,7 @@ export default function Header() {
 
         {/* MOBILE LINKS */}
         <div className="flex flex-col gap-6 text-lg font-bold">
-          <Link href="/docs" onClick={() => setMenuOpen(false)} className="hover:text-orange-400">
+          <Link href="/doc" onClick={() => setMenuOpen(false)} className="hover:text-orange-400">
             Docs
           </Link>
 
