@@ -98,7 +98,7 @@ export default function OrderingPage() {
         {/* SECTION – Digital Only */}
         <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow border border-gray-200">
           <h2 className="text-xl sm:text-2xl font-bold mb-4">
-            How to Opt for Digital-Only Card (₹599 Plan)
+            How to Opt for Digital-Only Card (₹899 Plan)
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed">
@@ -128,7 +128,7 @@ export default function OrderingPage() {
           <h3 className="text-lg sm:text-xl font-semibold mt-6 mb-2">🟦 Step 4: Purchase Digital-Only Plan</h3>
 
           <ul className="list-disc pl-6 space-y-1 text-gray-700 leading-relaxed">
-            <li>Click <strong>Buy at ₹599/-</strong></li>
+            <li>Click <strong>Buy at ₹899/-</strong></li>
             <li>Fill Name, Email, Phone, Address</li>
             <li>Click <strong>Pay Now</strong></li>
             <li>
