@@ -10,7 +10,7 @@ const Pricepage = () => {
       background: "/blue.png",
       title: "Digital Starter",
       description: "Perfect for individuals getting started",
-      price: "Starts From ₹599.00",
+      price: "Starts From ₹899.00",
     },
     {
       vdo: "/Business.mp4",
@@ -25,7 +25,7 @@ const Pricepage = () => {
     {
       background: "/blue.png",
       title: "Digital Starter",
-      price: "₹599 INR",
+      price: "₹899 INR",
       sub: "One-time payment • Lifetime access",
       feature: [
         "1 Digital Card",

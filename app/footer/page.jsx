@@ -11,7 +11,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row flex-wrap justify-between items-start gap-10">
         {/* Logo & About */}
         <div className="flex-1 min-w-[250px]">
-          <Link href="/" className="text-2xl font-bold font-serif cursor-pointer mb-4 block">
+          <Link
+            href="/"
+            className="text-2xl font-bold font-serif cursor-pointer mb-4 block"
+          >
             MY AI CARD
           </Link>
           <p className="text-sm text-gray-400 mb-4 leading-relaxed">
@@ -35,7 +38,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              href="https://www.facebook.com/myai_card/"
+              href="https://www.facebook.com/profile.php?id=61578177707323#"
               target="_blank"
               rel="noopener noreferrer"
               className="w-[40px] h-[40px] flex justify-center items-center bg-zinc-800 rounded-full hover:bg-zinc-700 transition-all duration-300"
@@ -79,7 +82,9 @@ const Footer = () => {
         <div className="flex-1 min-w-[180px]">
           <h2 className="text-lg font-bold mb-4">Resources</h2>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li>Documentation</li>
+            <li>
+              <Link href="/doc">Documentation</Link>
+            </li>
             <li>Blog & Articles</li>
             <li>Help Center</li>
             <li>Community Forum</li>
@@ -90,9 +95,20 @@ const Footer = () => {
         <div className="flex-1 min-w-[200px]">
           <h2 className="text-lg font-bold mb-4">Contact</h2>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li>Email: info@myaicard.com</li>
+            <li>
+              Email:{" "}
+              <a
+                href="mailto:myaicard@imitpark.com"
+                className="text-blue-400 hover:underline"
+              >
+                myaicard@imitpark.com
+              </a>
+            </li>
             <li>Phone: +91 89436 27627</li>
-            <li>Location: Bangalore, Karnataka</li>
+            <li>
+              Location: Finpro Technologies, S2, Navnit Vaidurya, II Main,
+              Sarvabhouma Nagar, Bannerghatta Road, Bangalore 560076
+            </li>
           </ul>
         </div>
       </div>
@@ -104,7 +120,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-center items-center text-center gap-2 md:gap-6">
         <p className="text-gray-500 text-sm">
           &copy; {new Date().getFullYear()}{" "}
-          <span className="text-orange-500">IMIT Park Ltd</span>. All rights reserved.
+          <span className="text-orange-500">IMIT Park Ltd</span>. All rights
+          reserved.
         </p>
 
         <Link

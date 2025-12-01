@@ -46,9 +46,9 @@ export default function Header() {
           <Link href="/features" className="hover:text-orange-400">Features</Link>
           <Link href="/useCase" className="hover:text-orange-400">Use Case</Link>
 
-          <a href="https://imitpark.com/contact" target="_blank" className="hover:text-orange-400">
+          <Link href="/contact" className="hover:text-orange-400">
             Contact
-          </a>
+          </Link>
 
           {/* COUNTRY SELECTOR */}
           <select
@@ -112,14 +112,9 @@ export default function Header() {
             Use Case
           </Link>
 
-          <a
-            href="https://imitpark.com/contact"
-            target="_blank"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-orange-400"
-          >
+          <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:text-orange-400">
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* COUNTRY SELECTOR - MOBILE */}

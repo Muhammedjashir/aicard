@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";  
 
 const Landingpage = () => {
   return (
@@ -22,14 +23,14 @@ const Landingpage = () => {
       <div className="absolute inset-0 flex flex-col md:flex-row items-center justify-center px-6 sm:px-12 md:px-20 lg:px-40">
         {/* Left Content */}
         <div className="flex-1 flex flex-col items-start justify-center ">
-          <h1 className="text-lg sm:text-xl md:text-2xl mb-4 text-black">
-            A SMART WAY TO CONNECT
+          <h1 className="text-lg sm:text-xl md:text-4xl mb-4 text-black">
+            Seamless Digital Networking
           </h1>
 
           <p className="mt-8 text-base sm:text-lg text-gray-500">
-            Create stunning digital NFC cards that make sharing <br />
+            Design professional NFC-enabled digital cards that simplify sharing <br />
             <span className="text-gray-500 font-semibold">
-              contacts effortless and memorable.
+              your contact information instantly.
             </span>
           </p>
 
@@ -39,7 +40,10 @@ const Landingpage = () => {
               Explore Cards
             </button> */}
             <button className="border rounded-lg px-10 sm:px-20 py-3 text-black font-semibold hover:scale-105 transition-transform duration-300 hover:bg-gray-200 cursor-pointer">
+              <Link href="/working">
               See How it Works
+              </Link>
+              
             </button>
           </div>
         </div>

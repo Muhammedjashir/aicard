@@ -1,128 +1,179 @@
-export default function UsecasePage() {
+"use client";
+
+export default function OrderingPage() {
   return (
-    <div className="mt-10 min-h-screen w-full flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 py-10 bg-gradient-to-r from-black via-slate-500 to-gray-200">
-      
-      {/* Title */}
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text text-center">
-        Use Cases
-      </h1>
+    <div className="mt-10 min-h-screen w-full bg-white px-5 sm:px-8 md:px-16 lg:px-24 py-12 text-gray-800">
 
-      <p className="text-lg sm:text-xl md:text-2xl text-white text-center font-semibold mt-4 mb-10">
-        How Our Digital Card Works
-      </p>
+      {/* Page Title */}
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          Ordering Your Physical NFC Card
+        </h1>
 
-      {/* Main Content */}
-      <div className="max-w-5xl text-white text-lg space-y-8">
-
-        <p>
-          Our Smart Digital Card is an NFC-enabled business card designed for everyone.
-          It makes sharing your profile as easy as a single tap or scan — no app required.
+        <p className="text-base sm:text-lg text-gray-600 mb-10 leading-relaxed max-w-3xl">
+          Follow the steps below to order your NFC-enabled business card or choose a digital-only plan.
         </p>
+      </div>
 
-        {/* Step 1 */}
-        <div>
-          <h2 className="text-3xl font-bold text-orange-400 mb-2">
-            1️⃣ Tap or Scan to Connect
-          </h2>
-          <p>
-            Every card comes with NFC and a QR code.
-            <br />• If the phone has NFC: Just tap the card on the phone — your profile instantly opens.
-            <br />• If the phone doesn’t have NFC: Simply scan the QR code using the camera.
-            <br />Your personalized profile opens instantly on any smartphone or browser.
-          </p>
-        </div>
+      <div className="max-w-5xl mx-auto space-y-10">
 
-        {/* Step 2 */}
-        <div>
-          <h2 className="text-3xl font-bold text-orange-400 mb-2">
-            2️⃣ View and Share
-          </h2>
+        {/* SECTION – Step 1 */}
+        <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow border border-gray-200">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4">Step 1: Get Your Card</h2>
 
-          <p>
-            Your digital card displays everything about you — all in one link:
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Below the share section, click <strong>Get Your Card</strong>.
           </p>
 
-          <ul className="list-disc pl-6 mt-2 space-y-1">
-            <li>Name, designation, and company (if any)</li>
-            <li>Contact details</li>
-            <li>Social media links</li>
-            <li>Services, products, portfolio, and gallery</li>
-            <li>YouTube channel or videos</li>
+          <h3 className="text-lg sm:text-xl font-semibold mt-4 mb-2">Choose Card Design</h3>
+          <ul className="list-disc pl-6 space-y-1 text-gray-700 leading-relaxed">
+            <li>Browse a wide range of physical card designs</li>
+            <li>Click on a card style</li>
+            <li>Click the Right Arrow (→)</li>
+            <li>Click <strong>Buy This Card</strong></li>
           </ul>
 
-          <p className="mt-4">Recipients can:</p>
+          <h3 className="text-lg sm:text-xl font-semibold mt-6 mb-2">Enter Email (Optional)</h3>
+          <p className="text-gray-700 leading-relaxed">
+            If you skipped entering your email earlier, you can add it here.
+            <br />Click <strong>Next</strong>.
+          </p>
 
-          <ul className="list-disc pl-6 mt-2 space-y-1">
-            <li>✅ Save your contact directly</li>
-            <li>✅ Visit your social profiles instantly</li>
-            <li>✅ Share your card link via WhatsApp, Facebook, or Instagram</li>
+          <h3 className="text-lg sm:text-xl font-semibold mt-6 mb-2">Add Delivery Address</h3>
+          <p className="text-gray-700 leading-relaxed">Enter:</p>
+
+          <ul className="list-disc pl-6 space-y-1 text-gray-700 leading-relaxed">
+            <li>Your Name</li>
+            <li>House / Flat Number</li>
+            <li>Street Address</li>
+            <li>City</li>
+            <li>PIN Code</li>
+            <li>State</li>
+            <li>Phone Number</li>
           </ul>
-        </div>
 
-        {/* Step 3 */}
-        <div>
-          <h2 className="text-3xl font-bold text-orange-400 mb-2">
-            3️⃣ Update Anytime
-          </h2>
-          <p>
-            You can update your details whenever you want.
-            <br />
-            No reprinting, no extra cost — your digital card always stays up to date.
+          <p className="text-gray-700 mt-3 leading-relaxed">
+            Then click <strong>Next</strong>.
+          </p>
+
+          <h3 className="text-lg sm:text-xl font-semibold mt-6 mb-2">Payment Options</h3>
+          <p className="text-gray-700 mb-2 leading-relaxed">
+            Click <strong>Pay Now</strong>. You can choose from:
+          </p>
+
+          <ul className="list-disc pl-6 space-y-1 text-gray-700 leading-relaxed">
+            <li>UPI</li>
+            <li>Credit/Debit Card</li>
+            <li>Net Banking</li>
+            <li>CBDC</li>
+            <li>Other online payment methods</li>
+          </ul>
+
+          <p className="text-gray-700 mt-3 leading-relaxed">
+            Complete the payment to confirm your order.
           </p>
         </div>
 
-        {/* Step 4 */}
-        <div>
-          <h2 className="text-3xl font-bold text-orange-400 mb-2">
-            4️⃣ Works for Everyone
-          </h2>
+        {/* SECTION – After Ordering */}
+        <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow border border-gray-200">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4">After You Place the Order</h2>
 
-          <p>That’s the best part — anyone can use it! Whether you’re a:</p>
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">CRO Verification Call</h3>
+          <p className="text-gray-700 leading-relaxed">
+            A Customer Relation Officer will contact you to:
+          </p>
 
-          <ul className="list-disc pl-6 mt-2 space-y-1">
-            <li>Business owner or entrepreneur</li>
-            <li>Doctor, lawyer, or real estate agent</li>
-            <li>Freelancer, influencer, or artist</li>
-            <li>Student or job seeker</li>
-            <li>Or anyone who wants to share contacts or social links easily</li>
+          <ul className="list-disc pl-6 space-y-1 text-gray-700 mt-2 leading-relaxed">
+            <li>Share a preview of your physical card</li>
+            <li>Confirm your details</li>
+            <li>Ensure everything is correct before printing</li>
           </ul>
 
-          <p className="mt-4">
-            👉 If you have something to share — your identity, business, or creativity — our digital card makes it effortless.
+          <h3 className="text-lg sm:text-xl font-semibold mt-6 mb-2">Delivery Timeline</h3>
+          <p className="text-gray-700 leading-relaxed">
+            Your NFC card will be delivered within <strong>5–7 working days</strong>.
           </p>
         </div>
 
-        {/* Step 5 */}
-        <div>
-          <h2 className="text-3xl font-bold text-orange-400 mb-2">
-            5️⃣ Why People Love It
+        {/* SECTION – Digital Only */}
+        <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow border border-gray-200">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4">
+            How to Opt for Digital-Only Card (₹599 Plan)
           </h2>
 
-          <ul className="list-disc pl-6 space-y-2">
-            <li>Works with both NFC and QR scan</li>
-            <li>Easy to update anytime</li>
-            <li>Share unlimited times</li>
-            <li>Eco-friendly — no paper cards needed</li>
-            <li>Looks modern, smart, and professional</li>
-          </ul>
-        </div>
-
-        {/* CTA */}
-        {/* <div className="text-center mt-12">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            ✨ Start Sharing Smarter
-          </h2>
-          <p className="text-xl text-gray-200 mb-6">
-            One card. Unlimited connections.
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            If you do not want a physical NFC card, follow these steps:
           </p>
 
-          <button
-            className="cursor-pointer border-2 border-white rounded-lg px-6 py-3 bg-transparent text-white font-semibold hover:bg-white hover:text-black transition-all duration-300"
-          >
-            Get Your Card Now
-          </button>
-        </div> */}
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">🟦 Step 1: Go to “View Website”</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            On the “Your Digital Card is Ready to Share” page, click <strong>View Website</strong>.
+          </p>
 
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">🟦 Step 2: Click “Activate Now”</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            At the top of your digital card preview, click <strong>Activate Now</strong>.
+          </p>
+
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">🟦 Step 3: Choose “Digital Business Card”</h3>
+          <p className="text-gray-700 leading-relaxed">
+            On the “Get Your Physical Card” screen, choose:
+          </p>
+
+          <ul className="list-disc pl-6 space-y-1 text-gray-700 mt-2 leading-relaxed">
+            <li><strong>Physical NFC Card</strong></li>
+            <li><strong>Digital Business Card</strong> → Select this</li>
+          </ul>
+
+          <h3 className="text-lg sm:text-xl font-semibold mt-6 mb-2">🟦 Step 4: Purchase Digital-Only Plan</h3>
+
+          <ul className="list-disc pl-6 space-y-1 text-gray-700 leading-relaxed">
+            <li>Click <strong>Buy at ₹599/-</strong></li>
+            <li>Fill Name, Email, Phone, Address</li>
+            <li>Click <strong>Pay Now</strong></li>
+            <li>
+              Complete payment via:
+              <ul className="list-disc pl-6 mt-2 space-y-1 leading-relaxed">
+                <li>UPI</li>
+                <li>Credit/Debit Card</li>
+                <li>Net Banking</li>
+                <li>CBDC (if available)</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p className="text-gray-700 mt-3 leading-relaxed">
+            Your digital card will be activated instantly.
+          </p>
+        </div>
+
+        {/* SECTION – After Activation */}
+        <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow border border-gray-200">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4">
+            Using Your Digital Card
+          </h2>
+
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">Share via WhatsApp / Link</h3>
+          <p className="text-gray-700 leading-relaxed">
+            Send your digital card link to anyone instantly.
+          </p>
+
+          <h3 className="text-lg sm:text-xl font-semibold mt-6 mb-2">QR Code Sharing</h3>
+          <p className="text-gray-700 leading-relaxed">
+            Every digital card includes a QR code for easy access.
+          </p>
+
+          <h3 className="text-lg sm:text-xl font-semibold mt-6 mb-2">NFC Tap Usage</h3>
+          <p className="text-gray-700 leading-relaxed">
+            Once your physical card arrives:
+          </p>
+
+          <ul className="list-disc pl-6 space-y-1 text-gray-700 leading-relaxed">
+            <li>Tap it on any NFC-enabled smartphone</li>
+            <li>Your digital card opens instantly</li>
+            <li>No app is required</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

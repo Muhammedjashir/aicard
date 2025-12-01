@@ -11,9 +11,9 @@ export default function ReturnandRefund() {
           <h3 className="font-semibold text-2xl mb-3">No Returns or Refunds</h3>
 
           <p>
-            Thank you for shopping with IMIT.com. We take pride in offering
+            Thank you for shopping with imitpark.com We take pride in offering
             high-quality digital products and services tailored to meet your
-            needs. Please note that all purchases made on IMIT.com are final. We
+            needs. Please note that all purchases made on imitpark.com are final. We
             have a strict No Return and No Refund policy. Once a purchase is
             completed, we do not accept returns or provide refunds under any
             circumstances.
@@ -34,7 +34,7 @@ export default function ReturnandRefund() {
             </a>
             .
             <br /><br />
-            By completing a purchase on IMIT.com, you acknowledge that you have
+            By completing a purchase on imitpark.com, you acknowledge that you have
             read, understood, and agreed to this No Return and No Refund Policy.
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function ReturnandRefund() {
           <h3 className="font-semibold text-2xl mb-3">No Refunds</h3>
 
           <p>
-            At IMIT.com, we strive to ensure you are fully satisfied with your
+            At imitpark.com, we strive to ensure you are fully satisfied with your
             purchase. However, please note that all sales are final, and we do
             not offer refunds or returns under any circumstances.
             <br /><br />
@@ -65,7 +65,7 @@ export default function ReturnandRefund() {
           </p>
 
           <p className="mt-4">
-            We deeply value the trust our customers place in IMIT.com, and we
+            We deeply value the trust our customers place in imitpark.com, and we
             strive to maintain the highest standards. Because our offerings are
             digital and often personalized or instantly accessible after
             purchase, traditional return or refund mechanisms cannot be applied.
@@ -74,7 +74,7 @@ export default function ReturnandRefund() {
             technical difficulties or issues accessing purchased services,
             contact our support team immediately.
             <br /><br />
-            By continuing to use IMIT.com, you acknowledge and agree to our No
+            By continuing to use imitpark.com, you acknowledge and agree to our No
             Refund and No Return Policy.
           </p>
         </div>
